@@ -17,7 +17,7 @@ $(document).ready(function(){
     var firstChoice = ["Miami", "Sandra Bullock", "Chicago", "Emily Prentis", "Joe", "3", "Mark Somers", "Washington D.C."];
     var secondChoice = ["Richmond", "Jennifer Lopez", "Tulsa", "Walter Mosley", "Jack", "2", "Wayne Robertson", "Las Vegas"];
     var thirdChoice = ["Chicago", "AJ Cook", "Boston", "Jim Jason", "Matt", "5", "Kevin Lynch", "Quantico"];
-    var fourthChoice = ["Las Vegas", "Jennifer Love Hewitt", "Seattle", "Clyde Easter", "1", "Alex Bezoard", "New York City" ];
+    var fourthChoice = ["Las Vegas", "Jennifer Love Hewitt", "Seattle", "Clyde Easter", "Pete","1", "Alex Bezoard", "New York City" ];
 
 // Show & Hide Functions
     function showHolders() {
@@ -178,19 +178,19 @@ $(document).ready(function(){
         }
         else if(count === 4) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/snitch.jpg">');
+            $("#image-holder").html('<img src="assets/images/jack.jpg">');
         }
         else if(count === 5) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/phoenix.jpg">');
+            $("#image-holder").html('<img src="assets/images/rossi.jpg">');
         }
         else if(count === 6) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/lion.jpg">');
+            $("#image-holder").html('<img src="assets/images/kevin.jpg">');
         }
         else if(count === 7) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/neville_longbottom.jpg">');
+            $("#image-holder").html('<img src="assets/images/quantico.jpg">');
         }
     }
 
