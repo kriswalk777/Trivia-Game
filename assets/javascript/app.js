@@ -1,5 +1,5 @@
 
-// Define variables
+
 $(document).ready(function(){
     var count = 0;
     var time = 31;
@@ -9,7 +9,7 @@ $(document).ready(function(){
     var incorrect = 0;
     var unanswered = 0;
 
-// Questions and Answer Arrays
+
     var question = ["What city was Spencer Reid born?","Who is JJ played by?", "Where was Derek Morgan a cop before he joined the BAU?", "What's the name of the leader of JTF-12 (Ian Doyle Task Force)?",
     "What was the name of Aaron Hotchner's son he had with his ex-wife Haley?", "How many times has David Rossi been divorced?", "What was the name of Penelope Garcia's fellow F.B.I. boyfriend?","Where is the B.A.U. Headquarters located?"
 ];
@@ -19,7 +19,7 @@ $(document).ready(function(){
     var thirdChoice = ["Chicago", "AJ Cook", "Boston", "Jim Jason", "Matt", "5", "Kevin Lynch", "Quantico"];
     var fourthChoice = ["Las Vegas", "Jennifer Love Hewitt", "Seattle", "Clyde Easter", "Pete","1", "Alex Bezoard", "New York City" ];
 
-// Show & Hide Functions
+
     function showHolders() {
         $("#question-holder").show();
         $("#choice-holder-1").show();
@@ -52,7 +52,7 @@ $(document).ready(function(){
         $("#choice-holder-3").html(thirdChoice[count]);
         $("#choice-holder-4").html(fourthChoice[count]);
     
-    // Hover CSS
+    
         $("#choice-holder-1").hover(function() {
             $(this).css("color", "gray");
         },
@@ -83,7 +83,7 @@ $(document).ready(function(){
     $("#choice-holder-3").on("click", checkAnswer)
     $("#choice-holder-4").on("click", checkAnswer)
 
-// Check Answer Function
+
     function checkAnswer() {
 
         hideHolders();
@@ -110,7 +110,7 @@ $(document).ready(function(){
         checkGameEnd();  
     }
 
-// Chekc End Game Function
+
     function checkGameEnd() {
         if(count === question.length) {
             $("#time-holder").hide();
@@ -217,7 +217,7 @@ $(document).ready(function(){
         displayQuestion();
     }
 
-// Start Game On Click
+
   $(".start").on("click", function() {
     startGame();
   });
